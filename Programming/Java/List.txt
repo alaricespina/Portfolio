@@ -1,0 +1,26 @@
+Dog.java = Basic Syntax
+Employee.java and EmployeeTest.java = Objects and Classes
+
+----------------------------
+w3 tutorials /
+----------------------------
+
+Java Syntax , Java Comments -- MyClass.java
+
+Java Variables -- Baryables.java
+
+Java Type Casting -- nrapcasting.java
+
+Java Operators -- nyoperators.java
+
+Java Strings -- mrstrings.java
+
+Java Math -- nyath.java
+
+Java Booleans -- nyooleans.java
+
+Java If then -- nyifnyen.java
+
+Java Switch -- nyitch.java
+
+Java While and For Loop -- habang.java

@@ -1,0 +1,4 @@
+Email,Password,Tags
+
+alaricsespina@gmail.com,Alaric828,MiningPH
+likokm@openitbox.com,LinkHat123,MiningPH

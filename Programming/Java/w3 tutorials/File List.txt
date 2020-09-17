@@ -1,0 +1,11 @@
+baryables.java - variables
+habang.java - loops
+mrstrings.java - string methods
+MyClass.java - println 
+nrapcasting.java - typecasting 
+nyath.java - math 
+nyifnyen.java - if then
+nyitch.java - switches
+nyooleans.java - booleans
+nyoperators - operators
+jbreakcontinue.java - Breaks/Continue loops

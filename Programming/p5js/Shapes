@@ -1,0 +1,46 @@
+[] - optional argument
+tl - top left, tr - top right, br - bottom right, bl - bottom left
+
+
+rect()
+----------------------
+rect(x, y, width, height)
+rect(x, y, width, height, [tl], [tr], [br], [bl]) *optional radius
+
+square()
+-----------------------
+square(x, y, side size) 
+square(x, y, side size, [tl], [tr], [br], [bl]) *optional radius
+
+triangle()
+--------------------------
+triangle(x1, y1, x2, y2, x3, y3)
+
+quad()
+--------------------------------------------------------------------
+quad(x1, y1, x2, y2, x3, y3, x4, y4) *clockwise or counter clockwise
+quad(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4) * z will only work on webGL mode
+
+point()
+---------------------------------------
+point(x, y, [z]) *z only for webGL mode
+point(coordinate_vector)
+
+line()
+--------------------
+line(x1, y1, x2, y2)
+
+circle()
+----------------
+circle(x, y, d)
+
+ellipse()
+-----------------------------------------------------------------
+ellipse(x, y, w, [h]) *if no h given, w is used (always positive)
+ellipse(x, y, w, h, detail) *detail for webGL mode
+
+arc()
+----------------------------------------------
+arc(x, y, w, h, start, stop, [mode], [detail])
+
+mode - CHORD, OPEN, PIE

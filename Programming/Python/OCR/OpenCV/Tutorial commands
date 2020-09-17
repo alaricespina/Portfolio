@@ -1,0 +1,41 @@
+#Key Notes from tutorials
+
+#opencv_tutorial_01.py
+-----------Commands--------------
+varname = cv2.imread('filename.jpg') <-- Open File
+
+(h, w, d) = varname.shape <-- Get height, width, depth of file
+
+(B, G, R) = varname[x, y] <-- Get Blue, Green, Red Values
+
+varname = image[y1:y2,x1:x2] <-- Crop the Image from set values
+
+resize(varname, (width,height)) <-- Resize the Image
+
+imutils.resize(varname, width=target width)
+
+matrixvariable = cv2.getRotationMatrix2D((width//2, height//2), angle(- if clockwise, + if counter), 1.0)
+rotatedvariable = cv2.warpAffine(image, matrixvariable, (width, height))
+
+imutils.rotate(imagevariable,angle)
+
+imutils.rotate_bound(imagevariable, -angle) <-- Good Image Rotation
+
+cv2.GaussianBlur(imagevariable, (kernel width, kernel height), 0) <-- Gaussian Blur
+
+variable = imagevariable.copy() <-- Copy an Image
+
+cv2.rectangle(imagevariable, (ulx,uly), (lrx,lry), (color in rgb tuple), border in px) <-- Create a rectangle ul = upper left, lr = lower right
+
+cv2.circle(imagevariable, (x,y), diameter, (color in rgb tuple), -1) <-- Create a circle
+
+cv2.line(imagevariable, (x1, y1), (x2, y2), (color in rgb tuple), border in px) <-- Create a line
+
+cv2.putText(imagevariable, "Text", (x, y), cv2.FONT_NAME, 0.7, (color in rgb tuple), 2)
+
+----------Notes-------------
+When Resizing : height = target height, width = original height * (target height/original width)
+
+imutils rotation and cv2 rotation using Matrix and warpAffine can crop the picture
+
+imutils.rotate_bound to keep full image while rotating

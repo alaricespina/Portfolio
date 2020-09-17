@@ -1,0 +1,50 @@
+Python Get Started -- helloworld.py
+
+Python Comments -- comments.py
+
+Python Variables -- variables.py
+
+Python Data Types -- datatypes.py
+= Numbers -- numbers.py
+
+Python Casting(conversion) -- casting.py
+
+Python Strings -- strings.py, stringmethods.py
+
+Python Booleans -- bools.py
+
+Python Operators -- operations.py
+
+Python Collections 
+	list -- arrayslist.py	
+	tuple -- arraystuple.py
+	set -- arrayset.py
+	dictionary -- arraydictionary.py
+
+Python If Else Conditions -- ifelse.py
+
+Python Loops -- loops.py
+
+Python Functions -- functions.py
+
+Python Lambda -- lambda.py
+
+Python Class -- classes.py
+
+Python Inheritance -- inheritance.py
+
+Python Iterators -- iterators.py
+
+Python Modules 
+	Modules -- modules.py. mymodules.py
+	Date and Time -- datetimes.py
+	Math -- maths.py
+	JSON -- jsons.py
+	Regular Expressions (RegEx) -- regexs.py
+
+Python Try ... Except -- tryexcept.py
+
+Python String Formatting -- stringformat.py
+
+--------------------------------------------
+File Handling -- files.py
