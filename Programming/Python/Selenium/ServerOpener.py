@@ -63,21 +63,20 @@ try:
 except:
     print("\nCannot Find a server\n")
 
-statuselement = driver.find_element_by_class_name("statuslabel-label")
-statustxt = statuselement.text #String
-
 while True:
+    statuselement = driver.find_element_by_class_name("statuslabel-label")
+    statustxt = statuselement.text #String
     if statustxt == "Offline":
         startbutton = driver.find_element_by_id("start")
         startbutton.click()
         print("\nServer is now Starting\n")
-        break
 
     if statustxt == "Online":
         print("\nServer is now online\n")
+        driver.quit()
         break
     
-driver.quit()
+
 
 #driver.quit() #close 
 
