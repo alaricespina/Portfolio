@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+
 Path = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(Path) 
 
@@ -66,18 +67,34 @@ except:
 while True:
     statuselement = driver.find_element_by_class_name("statuslabel-label")
     statustxt = statuselement.text #String
+
     if statustxt == "Offline":
         startbutton = driver.find_element_by_id("start")
         startbutton.click()
+        try:
+            element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,"alert-close")))
+            alertbutton = driver.find_element_by_class_name("alert-close")
+            alertbutton.click()
+        except:
+            print("No Alerts ok")
+        
         print("\nServer is now Starting\n")
+
 
     if statustxt == "Online":
         print("\nServer is now online\n")
         driver.quit()
         break
-    
 
+    if statustxt == "Waiting in queue":
+        try:
+            element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID,"confirm")))
+            confirmbutton = driver.find_element_by_id("confirm")
+            confirmbutton.click()
+            break
+        except:
+            print("Its still Waiting on Queue")
 
-#driver.quit() #close 
+driver.quit() #close 
 
 
