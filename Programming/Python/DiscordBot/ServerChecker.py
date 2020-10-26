@@ -12,8 +12,8 @@ def ServerOpen():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     waitdelay = 10 #in seconds
     #Account
-    aternosuser = "Ace9243"
-    aternospass = "Hatdog6969"
+    aternosuser = "BigPeni69"
+    aternospass = "hulkpenisbig69"
     driver.get("https://aternos.org/:en/") #URL For Aternos Server
 
     def findByLinkText(LT):
