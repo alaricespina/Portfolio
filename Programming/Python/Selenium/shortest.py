@@ -11,7 +11,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_argument('--disable-gpu')
 options.add_argument('--no-sandbox')
-
+options.add_argument('--headless')
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 waitdelay = 10 #in seconds
 
@@ -76,3 +76,4 @@ except:
 print("Enter Clicked")
 
 driver.close()
+driver.quit()
