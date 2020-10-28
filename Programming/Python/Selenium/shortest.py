@@ -8,7 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import random
 import time
 
-for i in range(0,10):
+n = 0
+for i in range(0,50):
+    print(f"Starting Loop {n}")
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
@@ -33,13 +35,13 @@ for i in range(0,10):
 
     def waitForID(Id):
         try:
-        WebDriverWait(driver, waitdelay).until(EC.visibility_of_element_located((By.ID,Id)))
+            WebDriverWait(driver, waitdelay).until(EC.visibility_of_element_located((By.ID,Id)))
         except:
             print("Error")
 
     def waitForClass(Classname):
         try:
-        WebDriverWait(driver, waitdelay).until(EC.visibility_of_element_located((By.CLASS_NAME,Classname)))
+            WebDriverWait(driver, waitdelay).until(EC.visibility_of_element_located((By.CLASS_NAME,Classname)))
         except:
             print("Error")
 
@@ -80,3 +82,4 @@ for i in range(0,10):
     driver.quit()
 
     print("Driver Has Exited")
+    print(f"{n} Loop has ended")
