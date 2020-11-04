@@ -14,6 +14,8 @@ for i in range(0,50):
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
+    options.add_argument('--log-level=3')
+    options.add_argument('--headless')
 
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     waitdelay = 10 #in seconds
@@ -66,6 +68,7 @@ for i in range(0,50):
     try:
         WebDriverWait(driver, waitdelay).until(EC.visibility_of_element_located((By.ID,"rc-imageselect")))
         driver.close()
+        print("Yawa may Captcha")
     except:
         print("No Captcha")
 
@@ -73,13 +76,15 @@ for i in range(0,50):
     enter = findByID("skip_button")
     try:
         enter.click()
+        print("Enter Clicked")
     except:
         print("Thingy not clickable")
 
-    print("Enter Clicked")
+  
 
     driver.close()
     driver.quit()
 
     print("Driver Has Exited")
     print(f"{n} Loop has ended")
+    n += 1
