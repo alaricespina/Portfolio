@@ -32,4 +32,4 @@ async def showguilds(ctx):
 
     
 #The token
-bot.run('NzcxMzc1NjUzOTM3MjE3NTk4.X5rNjw.9KyScYjyvxQzMLVuXJnfQlwqdwA')
+bot.run('NzcxMzc1NjUzOTM3MjE3NTk4.X5rNjw.oslcr4m5J24lflzePv5y2aCYbf8')
